@@ -28,7 +28,7 @@ Open `contact.html` and locate:
 action="https://forminit.com/f/l3ywq1fd67d"
 ```
 
-The website is connected to Forminit form ID `l3ywq1fd67d`. In the Forminit dashboard, configure `sales@ptrlm.com` as the notification recipient and set the redirect URL to `https://www.ptrlm.com/thank-you.html`. File uploads are limited by the active Forminit plan.
+The website is connected to Forminit form ID `l3ywq1fd67d` through the official Forminit HTML SDK. Field names use the required `fi-` block format. WhatsApp numbers must use international E.164 format, for example `+8617766177091`. In the Forminit dashboard, configure `sales@ptrlm.com` as the notification recipient and set the redirect URL to `https://www.ptrlm.com/thank-you.html`. File uploads are limited by the active Forminit plan.
 
 ## Change colors
 
