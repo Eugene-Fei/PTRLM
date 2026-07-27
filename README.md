@@ -20,15 +20,15 @@ All visual assets are stored in `images/`. Replace the placeholder SVG files wit
 
 The supplied hero video is saved as `images/hero-dog-raincoat.mp4`.
 
-## Connect Getform / Forminit
+## Forminit inquiry endpoint
 
 Open `contact.html` and locate:
 
 ```html
-action="https://getform.io/f/YOUR_FORM_ENDPOINT"
+action="https://forminit.com/f/l3ywq1fd67d"
 ```
 
-Replace it with the form endpoint supplied by Getform or Forminit. In the provider dashboard, configure `sales@ptrlm.com` as the notification recipient. File uploads require a provider plan that supports multipart attachments. The static site itself cannot send email without a form service.
+The website is connected to Forminit form ID `l3ywq1fd67d`. In the Forminit dashboard, configure `sales@ptrlm.com` as the notification recipient and set the redirect URL to `https://www.ptrlm.com/thank-you.html`. File uploads are limited by the active Forminit plan.
 
 ## Change colors
 
@@ -51,7 +51,7 @@ Default English text is written directly in the HTML. Language translations are 
 
 ## Publish
 
-Upload the entire `petrealm-website` folder without changing its internal structure. The hosting service should use `index.html` as the entry file. Test the Getform endpoint after publishing.
+Upload the entire `petrealm-website` folder without changing its internal structure. The hosting service should use `index.html` as the entry file. Test the Forminit endpoint after publishing.
 
 ## EdgeOne CMS
 
