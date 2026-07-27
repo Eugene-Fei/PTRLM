@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Wholesale pet product OEM and ODM manufacturing by PetRealm in Guangzhou, China.">
+  <title>Wholesale Pet Product | PetRealm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">PTRLM<small>PetRealm Wholesale</small></a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a class="active" href="products.html" data-i18n="products">Products</a>
+        <a href="oem.html" data-i18n="oem">OEM &amp; Custom</a>
+        <a href="about.html" data-i18n="about">About Us</a>
+        <a href="contact.html" data-i18n="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <select class="language" aria-label="Language">
+          <option value="en">EN</option><option value="zh">中文</option><option value="es">ES</option>
+          <option value="fr">FR</option><option value="de">DE</option><option value="ja">日本語</option>
+        </select>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <a class="inquiry-fixed" href="#detail-inquiry" data-detail-key="quote">Request Quote</a>
+
+  <main>
+    <!-- 1. HERO: replace the product image path in js/product-detail.js. -->
+    <section class="detail-hero">
+      <div class="container detail-hero-grid">
+        <div class="detail-hero-media"><img id="detail-hero-image" src="images/transparent.svg" alt=""></div>
+        <div>
+          <div class="detail-breadcrumb"><a href="products.html" data-detail-key="allProducts">Products</a> / <span id="detail-breadcrumb-name"></span></div>
+          <p class="kicker" data-detail-key="wholesaleOem">WHOLESALE · OEM / ODM</p>
+          <h1 id="detail-title">Wholesale Pet Product OEM Manufacturer</h1>
+          <p class="detail-subtitle" id="detail-subtitle"></p>
+          <div class="detail-actions">
+            <a class="button dark" href="#detail-inquiry" data-detail-key="quote">Request Wholesale Quote</a>
+            <a class="button" id="detail-whatsapp-top" href="https://wa.me/8617766177091" target="_blank" rel="noopener" data-detail-key="whatsappUs">WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SHORT DESCRIPTION -->
+    <section class="detail-section white"><div class="container detail-heading">
+      <h2 data-detail-key="overview">Product Overview</h2><p class="detail-copy" id="detail-description"></p>
+    </div></section>
+
+    <!-- 3. PRODUCT GALLERY: all paths remain inside /images for easy replacement. -->
+    <section class="detail-section"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="gallery">Product Gallery</h2><p class="detail-copy" data-detail-key="galleryIntro">Use clean product, lifestyle and construction images to evaluate the range.</p></div>
+      <div class="gallery-grid" id="detail-gallery"></div>
+    </div></section>
+
+    <!-- 4. SPECIFICATION TABLE -->
+    <section class="detail-section white"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="specifications">Specifications</h2><p class="detail-copy" data-detail-key="specIntro">Reference specifications for wholesale development. Final details are confirmed during sampling.</p></div>
+      <div class="detail-table-wrap"><table class="detail-table"><tbody id="detail-specs"></tbody></table></div>
+    </div></section>
+
+    <!-- 5 & 6. MATERIAL, CARE AND NORTH AMERICAN SIZE CHART -->
+    <section class="detail-section"><div class="container two-column">
+      <div><p class="kicker">TFPIA</p><h2 data-detail-key="materialCare">Material &amp; Care</h2><p id="detail-composition"></p><ul class="care-list" id="detail-care"></ul></div>
+      <div><p class="kicker" data-detail-key="northAmerica">NORTH AMERICAN FORMAT</p><h2 data-detail-key="sizeChart">Size Chart</h2><p class="size-note" id="detail-size-note"></p><div class="detail-table-wrap"><table class="detail-table"><thead id="detail-size-head"></thead><tbody id="detail-size-body"></tbody></table></div></div>
+    </div></section>
+
+    <!-- 7. CERTIFICATIONS: placeholders only; activate downloads after verification. -->
+    <section class="detail-section white"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="certifications">Compliance Documents</h2><p class="detail-copy" data-detail-key="certIntro">Document positions are reserved for verified reports. No certification claim is made until the relevant file is approved and uploaded.</p></div>
+      <div class="badge-grid">
+        <div class="compliance-badge"><strong>OEKO-TEX Standard 100</strong><span data-detail-key="certPlaceholder">[Insert verified certificate when available]</span><a class="button disabled-link" href="#" aria-disabled="true" data-detail-key="pdfPending">PDF Pending</a></div>
+        <div class="compliance-badge"><strong>Prop 65</strong><span data-detail-key="reportPlaceholder">[Insert verified test report when available]</span><a class="button disabled-link" href="#" aria-disabled="true" data-detail-key="pdfPending">PDF Pending</a></div>
+        <div class="compliance-badge"><strong data-detail-key="marketFiles">Market-Specific Files</strong><span data-detail-key="marketPlaceholder">[Add buyer-required compliance documents]</span><a class="button disabled-link" href="#" aria-disabled="true" data-detail-key="pdfPending">PDF Pending</a></div>
+      </div>
+    </div></section>
+
+    <!-- 8. OEM / ODM CAPABILITY -->
+    <section class="detail-section"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="oemCapability">OEM / ODM Capability</h2><p class="detail-copy" id="detail-customization"></p></div>
+      <div class="process-strip">
+        <div class="process-item"><b>01</b><h3 data-detail-key="processInquiry">Inquiry</h3><p data-detail-key="processInquiryP">Share product references, market requirements, target quantity and price position.</p></div>
+        <div class="process-item"><b>02</b><h3 data-detail-key="processSample">Sampling</h3><p data-detail-key="processSampleP">Confirm material, construction, branding, color, sizing and packaging.</p></div>
+        <div class="process-item"><b>03</b><h3 data-detail-key="processBulk">Bulk Production</h3><p data-detail-key="processBulkP">Approved specifications move into controlled production, inspection and export packing.</p></div>
+      </div>
+    </div></section>
+
+    <!-- 9. FACTORY SHOWCASE: replace images/video after factory assets are supplied. -->
+    <section class="detail-section white"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="factoryShowcase">Factory Showcase</h2><p class="detail-copy" data-detail-key="factoryIntro">Production and quality-control media can be reviewed here before supplier approval.</p></div>
+      <div class="factory-grid">
+        <div class="factory-media"><img src="images/transparent.svg" alt="Factory production line placeholder"><span class="gallery-label" data-detail-key="factoryPhoto">[Factory production photo]</span></div>
+        <div class="factory-media"><div class="video-placeholder"><div><strong data-detail-key="qcVideo">QC Video</strong><p data-detail-key="qcVideoPlaceholder">[Embed verified production or inspection video]</p></div></div></div>
+      </div>
+    </div></section>
+
+    <!-- 10. FAQ -->
+    <section class="detail-section"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="faq">Buyer FAQ</h2><p class="detail-copy" data-detail-key="faqIntro">Practical answers for wholesale and private-label purchasing teams.</p></div>
+      <div class="faq-list" id="detail-faq"></div>
+    </div></section>
+
+    <!-- 11. CTA / FORMINIT INQUIRY -->
+    <section class="detail-section detail-cta" id="detail-inquiry"><div class="container">
+      <div class="detail-heading"><h2 data-detail-key="startProject">Start Your Project</h2><p class="detail-copy" data-detail-key="formIntro">Tell us what you are sourcing. Our export team normally replies within one business day.</p></div>
+      <div id="inquiry-form"><form enctype="multipart/form-data">
+        <input id="source" type="hidden" value="Product detail page">
+        <input id="product" type="hidden" value="">
+        <div class="detail-form-grid">
+          <div class="field"><label for="name" data-detail-key="name">Name</label><input id="name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="company" data-detail-key="company">Company</label><input id="company" type="text" required autocomplete="organization"></div>
+          <div class="field"><label for="email" data-detail-key="email">Business Email</label><input id="email" type="email" required autocomplete="email"></div>
+          <div class="field full"><label for="details" data-detail-key="message">Message</label><textarea id="details" rows="6" required data-detail-placeholder="messagePlaceholder" placeholder="Target quantity, market, specifications and delivery requirements..."></textarea></div>
+          <div class="field full"><button class="button dark" type="submit" data-detail-key="submit">Submit Inquiry</button></div>
+        </div>
+      </form></div>
+    </div></section>
+  </main>
+
+  <a class="whatsapp-float" id="detail-whatsapp-float" href="https://wa.me/8617766177091" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">PTRLM</div><p data-i18n="footerP">Wholesale pet product manufacturing for global brands.</p></div><div class="footer-col"><h4 data-i18n="company">Company</h4><a href="about.html" data-i18n="about">About Us</a></div><div class="footer-col"><h4 data-i18n="services">Services</h4><a href="oem.html" data-i18n="oem">OEM &amp; Custom</a></div><div class="footer-col"><h4 data-i18n="reach">Reach Us</h4><a href="mailto:sales@ptrlm.com">sales@ptrlm.com</a><a href="https://wa.me/8617766177091">+86 177 6617 7091</a></div></div><div class="copyright"><span>© 2026 PetRealm.</span><span data-i18n="rights">All rights reserved.</span></div></div></footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/product-detail.js" defer></script>
+</body>
+</html>
