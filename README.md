@@ -230,6 +230,41 @@ index.html
 7. 企业邮箱是否收到通知邮件。
 8. 提交后是否进入 `thank-you.html`。
 
+### EdgeOne 缓存刷新
+
+每次重新部署首页、JavaScript、CSS 或视频后，建议在 EdgeOne 后台执行一次缓存刷新。至少刷新：
+
+```text
+https://www.ptrlm.com/
+https://www.ptrlm.com/index.html
+https://www.ptrlm.com/*
+```
+
+如果以后启用了不带 `www` 的根域名，还需要同时刷新：
+
+```text
+https://ptrlm.com/
+https://ptrlm.com/index.html
+https://ptrlm.com/*
+```
+
+首页视频和首屏脚本已经使用版本号，例如：
+
+```text
+images/hero-dog-raincoat.mp4?v=20260728-2
+js/main.js?v=20260728-2
+```
+
+以后对这些文件进行重要修改时，应同步更新版本号，避免 Safari 或其他手机浏览器继续使用旧缓存。
+
+### 根域名与企业邮箱
+
+根域名 `@` 的 A 记录可以与企业邮箱 MX 记录共存，但根域名 CNAME 不能与同名 MX 记录共存。
+
+只有在 EdgeOne 明确提供固定 A/AAAA 地址时，才可以将根域名 `@` 指向该地址。不要把 CNAME 临时解析得到的 CDN 节点 IP 直接填写为 A 记录。
+
+如果 EdgeOne 只提供 CNAME，可选择 EdgeOne/DNS 服务支持的根域名扁平化功能，或使用带固定公网 IP 的腾讯云服务器将 `ptrlm.com` 通过 HTTPS 301 跳转至 `www.ptrlm.com`。配置过程中必须保留现有 MX、SPF、DKIM 和 DMARC 邮箱记录。
+
 ## 十、EdgeOne 后台方案
 
 关于 GitHub、EdgeOne Pages 和 Decap CMS 的后台管理方案，请查看：
